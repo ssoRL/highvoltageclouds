@@ -25,8 +25,8 @@
   />
 
 
-  <path stroke="black" fill="yellow" d="
-    M 30 60
+  <path stroke="black" fill="#a7a738" d="
+    M 33.3 60
     l -5 15
     l 6 -1
     l -5 15
