@@ -21,11 +21,12 @@
     }
     .cloud {
       stroke:rgb(20,20,20);
-      fill:lightgray;
+      fill:none;
     }
     .lightning {
       stroke:rgb(20,20,20);
       fill:yellow;
+      fill-opacity: .3;
     }
   </style>
 
