@@ -28,12 +28,12 @@
 
   <path stroke="black" fill="yellow" d="
     M 30 60
-    l -5 10
+    l -5 15
     l 6 -1
-    l -5 10
-    l 18 -15
+    l -5 15
+    l 25 -20
     l -6  1
-    l 5 -5
+    l 10 -10
     Z"
   />
 </svg>

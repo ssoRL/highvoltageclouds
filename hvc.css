@@ -1,7 +1,7 @@
 .full-width {
     width: 80vw;
     min-width: 80px;
-    margin: 0 10vw;
+    margin: 0 auto;
 }
 
 #top-banner {
@@ -27,7 +27,7 @@ h1 {
     margin: 20px;
     transition: all 200ms;
     border: 2px solid dimgray;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -69,4 +69,10 @@ h1 {
     background-image: url(./media/jaguar-icon.png);
     background-size: cover;
     background-color: black;
+}
+
+#three-ai {
+    background-image: url(./media/three-ai.svg);
+    background-size: cover;
+    background-color: lightsteelblue;
 }

@@ -1,9 +1,9 @@
 <svg viewBox="0 0 195 100" xmlns="http://www.w3.org/2000/svg">
   <style>
     .common { 
-      text-anchor: middle; 
-      fill: black; 
-      font-size: 25px;
+      text-anchor: left; 
+      fill: rgb(20,20,20); 
+      font-size: 27px;
       font-family: sans-serif;
       font-variant-caps: small-caps;
     }
@@ -15,13 +15,21 @@
       font-weight: bold;
     }
     .mes {
-      font-size: 8.5px;
+      font-size: 13px;
       font-family: serif;
       text-anchor: start;
     }
+    .cloud {
+      stroke:rgb(20,20,20);
+      fill:none;
+    }
+    .lightning {
+      stroke:rgb(20,20,20);
+      fill:yellow;
+    }
   </style>
 
-  <path stroke="black" fill="none" d="
+  <path class="cloud" d="
     M 170 60
     A 10 10 0 0 0 170 30
     L 100 30
@@ -31,18 +39,18 @@
     Z" 
   />
 
-  <text x="63" y="35" class="common high-clouds">
+  <text x="37" y="35" textLength="50" class="common high-clouds">
     High
   </text>
-  <text x="55" y="54" class="common voltage">
+  <text x="11" y="54" textLength="86" class="common voltage">
     Voltage
   </text>
-  <text x="138" y="54" class="common high-clouds">
+  <text x="97" y="54" textLength="83" class="common high-clouds">
     Clouds
   </text>
 
-  <path stroke="black" fill="none" d="
-    M 30 60
+  <path  class="lightning" d="
+    M 35 60
     l -5 20
     l 6 -2
     l -5 20
@@ -52,7 +60,10 @@
     Z"
   />
 
-  <text  x="48" y="68" class="mes">
-    Modern Experiments in Storytelling
+  <text  x="55" y="71" class="mes">
+    Modern Experiments
+  </text>
+  <text  x="60" y="84" class="mes">
+    in Storytelling
   </text>
 </svg>
