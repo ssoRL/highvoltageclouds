@@ -7,11 +7,10 @@ body {
 }
 
 #top-banner {
-    --size: 400px;
-    height: var(--size);
-    width: var(--size);
-    margin: 0 auto 20px;
-    background-image: url(./media/hvc-in-cloud-tall.svg);
+    width: calc(5*100vw/6);
+    height: calc(100vw/6);
+    margin: 10px auto 30px;
+    background-image: url(./media/hvc-text-only-wide.svg);
 }
 
 h1 {

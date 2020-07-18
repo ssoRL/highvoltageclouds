@@ -1,51 +1,30 @@
-<svg viewBox="0 0 195 100" xmlns="http://www.w3.org/2000/svg">
+<!-- Uses a 5:1 aspect ratio -->
+<svg viewBox="0 0 210 42" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .common { 
-      text-anchor: left; 
+    .hvc { 
+      text-anchor: start;
       fill: rgb(20,20,20); 
-      font-size: 27px;
+      font-size: 25px;
       font-family: sans-serif;
       font-variant-caps: small-caps;
-    }
-    .high-clouds {
       font-style: italic;
     }
     .voltage  {
-      font-style: italic;
-      font-weight: bold;
+      font-weight: bolder;
     }
     .mes {
-      font-size: 13px;
+      text-anchor: middle;
+      font-size: 11px;
       font-family: serif;
-      text-anchor: start;
     }
   </style>
 
-  <text x="37" y="35" textLength="50" class="common high-clouds">
-    High
-  </text>
-  <text x="11" y="54" textLength="86" class="common voltage">
-    Voltage
-  </text>
-  <text x="97" y="54" textLength="83" class="common high-clouds">
-    Clouds
+  <text x="5" y="25" textLength="200" class="hvc">
+    High<tspan class="voltage">Voltage</tspan>Clouds
   </text>
 
-  <path  class="lightning" d="
-    M 35 60
-    l -5 20
-    l 6 -2
-    l -5 20
-    l 18 -30
-    l -6  2
-    l 5 -10
-    Z"
-  />
 
-  <text  x="55" y="71" class="mes">
-    Modern Experiments
-  </text>
-  <text  x="60" y="84" class="mes">
-    in Storytelling
+  <text  x="105" y="35" class="mes">
+    Modern Experiments in Storytelling
   </text>
 </svg>
