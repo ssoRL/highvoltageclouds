@@ -1,0 +1,69 @@
+<svg viewBox="0 0 195 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .common { 
+      text-anchor: left; 
+      fill: rgb(20,20,20); 
+      font-size: 27px;
+      font-family: sans-serif;
+      font-variant-caps: small-caps;
+    }
+    .high-clouds {
+      font-style: italic;
+    }
+    .voltage  {
+      font-style: italic;
+      font-weight: bold;
+    }
+    .mes {
+      font-size: 13px;
+      font-family: serif;
+      text-anchor: start;
+    }
+    .cloud {
+      stroke:rgb(20,20,20);
+      fill:none;
+    }
+    .lightning {
+      stroke:rgb(20,20,20);
+      fill:none;
+    }
+  </style>
+
+  <text x="33" y="37" textLength="50" class="common high-clouds">
+    High
+  </text>
+  <text x="11" y="54" textLength="86" class="common voltage">
+    Voltage
+  </text>
+  <text x="103" y="54" textLength="83" class="common high-clouds">
+    Clouds
+  </text>
+
+<g transform="scale(.5, .4) translate(175, 20)">
+  <path class="cloud" d="
+    M 65 60
+    a 15 15 0 0 0 0 -30
+    a 20.1 17 0 1 0 -40 0
+    a 15 15 0 0 0 0 30
+    Z" 
+  />
+
+  <path  class="lightning" d="
+    M 30 60
+    l -5 20
+    l 6 -2
+    l -5 20
+    l 18 -30
+    l -6  2
+    l 5 -10
+    Z"
+  />
+</g>
+
+  <text  x="55" y="71" class="mes">
+    Modern Experiments
+  </text>
+  <text  x="60" y="84" class="mes">
+    in Storytelling
+  </text>
+</svg>

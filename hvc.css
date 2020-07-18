@@ -1,27 +1,36 @@
+:root {
+    --text-color: rgb(50,50,50);
+  }
+
 body {
     background: rgb(250,250,255);
 }
 
-.full-width {
-    width: 80vw;
-    min-width: 80px;
-    margin: 0 auto;
-}
-
 #top-banner {
-    height: 40vw;
-    min-height: 40px;
-    background-image: url(./media/banner.svg);
-    margin-bottom: 5vw;
+    --size: 400px;
+    height: var(--size);
+    width: var(--size);
+    margin: 0 auto 20px;
+    background-image: url(./media/hvc-in-cloud-tall.svg);
 }
 
 h1 {
     font-weight: bold;
     font-family: sans-serif;
-    color: rgb(50, 50, 50);
+    color: var(--text-color);
     width: 100%;
     border-bottom: dimgray 4px solid;
     margin-bottom: 0;
+}
+
+.stories {
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    border-top: dimgray 4px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .story-badge {
@@ -31,7 +40,6 @@ h1 {
     margin: 20px;
     transition: all 200ms;
     border: 2px solid dimgray;
-    display: inline-flex;
     text-decoration: none;
 }
 
@@ -72,7 +80,7 @@ h1 {
 
 /* Custom styles for "The Last God Of Darkness" */
 .tlgotd.story-image {
-    background-image: url(./media/jaguar-icon.png);
+    background-image: url(./media/jaguar-head.svg);
     background-size: cover;
     background-color: black;
 }
