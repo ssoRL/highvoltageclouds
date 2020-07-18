@@ -29,7 +29,6 @@ h1 {
     border: 2px solid dimgray;
     display: inline-flex;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 .story-badge:hover {
@@ -61,18 +60,25 @@ h1 {
 
 .story-name:hover {
     background-color: rgba(0, 0, 0, .8);
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .9);
     padding: 10px;
+    backdrop-filter: blur(3px);
 }
 
-#tlgotd {
+/* Custom styles for "The Last God Of Darkness" */
+.tlgotd.story-image {
     background-image: url(./media/jaguar-icon.png);
     background-size: cover;
     background-color: black;
 }
 
-#three-ai {
+/* Custom styles for "Three Visions of Artificial Apocalypse" */
+.three-ai.story-image {
     background-image: url(./media/three-ai.svg);
     background-size: cover;
-    background-color: lightsteelblue;
+    background-color: gray;
+}
+
+.three-ai.story-name {
+    font-size: 35px;
 }
