@@ -21,7 +21,7 @@
     }
     .cloud {
       stroke:rgb(20,20,20);
-      fill:none;
+      fill:lightgray;
     }
     .lightning {
       stroke:rgb(20,20,20);
@@ -31,11 +31,11 @@
 
   <path class="cloud" d="
     M 170 60
-    A 10 10 0 0 0 170 30
+    A 15 15 0 0 0 170 30
     L 100 30
-    A 36 28 0 0 0 30 30
+    A 35.3 17 0 1 0 30 30
     L 25 30
-    A 10 10 0 0 0 25 60
+    A 15 15 0 0 0 25 60
     Z" 
   />
 
