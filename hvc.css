@@ -9,6 +9,8 @@ body {
 #top-banner {
     width: calc(5*100vw/6);
     height: calc(100vw/6);
+    min-width: 500px;
+    min-height: 100px;
     margin: 10px auto 30px;
     background-image: url(./media/hvc-text-only-wide.svg);
 }
@@ -24,7 +26,7 @@ h1 {
 
 .stories {
     width: 80%;
-    min-width: 300px;
+    min-width: 500px;
     margin: auto;
     border-top: dimgray 4px solid;
     display: flex;
@@ -92,5 +94,7 @@ h1 {
 }
 
 .three-ai.story-name {
-    font-size: 35px;
+    font-size: 100px;
+    font-family: monospace;
+    text-align: center;
 }
