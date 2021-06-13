@@ -13,25 +13,18 @@ body {
     min-height: 100px;
     margin: 10px auto 30px;
     background-image: url(./media/hvc-text-only-wide.svg);
+    border-bottom: dimgray 1px solid;
 }
 
-h1 {
-    font-weight: bold;
-    font-family: sans-serif;
-    color: var(--text-color);
-    width: 100%;
-    border-bottom: dimgray 4px solid;
-    margin-bottom: 0;
-}
-
-.stories {
+#stories {
     width: 80%;
     min-width: 500px;
     margin: auto;
-    border-top: dimgray 4px solid;
+}
+
+#story-badges {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .story-badge {
@@ -59,7 +52,6 @@ h1 {
 }
 
 .story-name {
-    font-size: 40px;
     font-family: sans-serif;
     position: relative;
     width: 200px;
@@ -81,6 +73,7 @@ h1 {
 
 /* Custom styles for "The Last God Of Darkness" */
 .tlgotd.story-image {
+    font-size: 40px;
     background-image: url(./media/jaguar-head.svg);
     background-size: cover;
     background-color: black;
@@ -96,5 +89,18 @@ h1 {
 .three-ai.story-name {
     font-size: 100px;
     font-family: monospace;
+    text-align: center;
+}
+
+/* Custom styles for "Edward's Kitten" */
+.edwards-kitten.story-image {
+    background-image: url(./media/edward.png);
+    background-size: cover;
+    background-color: gray;
+}
+
+.edwards-kitten.story-name {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
