@@ -1,5 +1,10 @@
 :root {
     --text-color: rgb(50,50,50);
+    --badge-size: 200px;
+    --badge-margin: 20px;
+    --badge-expand: 10px;
+    /* Calculate some values  */
+    --badge-space: calc(var(--badge-size) + 2*var(--badge-margin))
   }
 
 body {
@@ -9,22 +14,26 @@ body {
 #top-banner {
     width: calc(5*100vw/6);
     height: calc(100vw/6);
-    min-width: 500px;
-    min-height: 100px;
+    min-width: calc(2*var(--badge-space));
+    min-height: calc(2*var(--badge-space)/5);
+    --top-banner-max: 700px;
+    max-width: var(--top-banner-max);
+    max-height: calc(var(--top-banner-max)/5);
     margin: 10px auto 30px;
     background-image: url(./media/hvc-text-only-wide.svg);
     border-bottom: dimgray 1px solid;
 }
 
 #stories {
-    width: 80%;
-    min-width: 500px;
     margin: auto;
-}
-
-#story-badges {
     display: flex;
     flex-wrap: wrap;
+    width: calc(3*var(--badge-space) + 1px);
+}
+@media (max-width: 800px) {
+    #stories {
+        width: calc(2*var(--badge-space))
+    }
 }
 
 .story-badge {
@@ -32,8 +41,9 @@ body {
     width: 200px;
     height: 200px;
     margin: 20px;
+    border: 1px dimgray solid;
+    box-sizing: border-box;
     transition: all 200ms;
-    border: 2px solid dimgray;
     text-decoration: none;
 }
 
@@ -61,6 +71,13 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(0, 0, 0, 0);
     transition: all 200ms;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.story-name .spacer {
+    flex: 1;
 }
 
 .story-name:hover {
@@ -72,35 +89,36 @@ body {
 }
 
 /* Custom styles for "The Last God Of Darkness" */
-.tlgotd.story-image {
-    font-size: 40px;
+#tlgotd .story-image {
     background-image: url(./media/jaguar-head.svg);
     background-size: cover;
     background-color: black;
 }
 
+#tlgotd .story-name {
+    font-size: 40px;
+}
+
 /* Custom styles for "Three Visions of Artificial Apocalypse" */
-.three-ai.story-image {
+#three-ai .story-image {
     background-image: url(./media/three-ai.svg);
     background-size: cover;
     background-color: gray;
 }
 
-.three-ai.story-name {
+#three-ai .story-name {
     font-size: 100px;
     font-family: monospace;
-    text-align: center;
 }
 
 /* Custom styles for "Edward's Kitten" */
-.edwards-kitten.story-image {
+#edwards-kitten .story-image {
     background-image: url(./media/edward.png);
     background-size: cover;
     background-color: gray;
 }
 
-.edwards-kitten.story-name {
+#edwards-kitten .story-name {
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
 }
