@@ -113,7 +113,7 @@ body {
 
 /* Custom styles for "Edward's Kitten" */
 #edwards-kitten .story-image {
-    background-image: url(./media/edward.png);
+    background-image: url(./media/edward.jpg);
     background-size: cover;
     background-color: gray;
 }
